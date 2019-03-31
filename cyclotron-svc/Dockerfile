@@ -31,6 +31,9 @@ RUN sudo npm install --unsafe-perm \
                 forever \
                 casperjs \
                 phantomjs-prebuilt
+
+RUN mv /home/node/app/cyclotron-svc/config/config_sample.js /home/node/app/cyclotron-svc/config/config.js
+
 VOLUME [ "/home/node/app/cyclotron-svc/config" ]
 EXPOSE 8077
 CMD [ "./start.sh" ]
