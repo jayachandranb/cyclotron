@@ -34,10 +34,3 @@ RUN sudo npm install --unsafe-perm \
 VOLUME [ "/home/node/app/cyclotron-svc/config" ]
 EXPOSE 8077
 CMD [ "./start.sh" ]
-
-
-
-
-
-
-
